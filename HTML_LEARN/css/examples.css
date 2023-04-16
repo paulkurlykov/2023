@@ -1,0 +1,90 @@
+/* //////////////// FONTS /////////////////// */
+
+.forexamples1 {
+
+    /* FONTS */
+
+font-family: helvetica; /*семейство шрифтов*/
+font-size: 13; /*размер шрифта*/
+font-style: normal; /*наклон-курсив-нормал*/
+font-weight: 700; /*жирность*/
+color: light azure;
+
+/* TEXT PROPERTIES */
+
+text-align: center; /*выравнивание left-center-right-justify*/
+text-decoration: underline; /*оформление подчеркнутный-зачеркнутый-none*/
+text-shadow: 1px 1px 1px white; /*горизонталь-вертикаль-толщина-цвет*/
+text-transform: uppercase; /*строчные-заглавные-каждое слово с большой*/
+text-indent: 0%; /*отступ красной строки*/
+letter-spacing: normal; /*интервал между буквами*/
+word-spacing: normal; /*интервал между словами*/
+white-space: normal; /*параметры переноса строки*/
+line-height: normal; /*межстрочный интервал*/
+
+/* BLOCKS PROPERTIES */
+
+padding: 10px 5px 10px 5px; /*отступ внутри блока top-right-bottom-left*/
+margin: 20px; /*внешний отступ самого блока (буфер вокруг блока*/
+border: 1px double red;  /*параметры контура толщина-цвет*/
+/* width: 500px; постоянная ширина блока */
+max-width: 700px; /*адаптивный макс ширины блока, может менятся, но не больше значения*/
+min-width: 100px; /*адаптивный мин ширины блока*/
+height: 100px; /*высота блока*/
+/* float: left; перенос блока влево-вправо-чтобы текст его обтекал */
+overflow: auto; /*отображение содержимого блока за пределами блока*/
+display: block; /*придает спану свойства блочного тега и наоборот*/
+
+/* BORDERS AND GRAPHICS PROPERTIES */
+
+border: 5px dotted black; /* толщина стиль цвет */
+border-radius: 20px; /* степень закругления границы */
+outline: 1px dashed black; /* тоже граница, но внутренняя, радиус не применим */
+box-shadow: 5px 5px 5px 5px grey; /* тень для всего блока, все как и с текстом */
+opacity: 0.5; /* можно сделать блок невидимым, место будет занимать, и можно взаимодействовать */
+visibility: visible; /* можно сделать блок невидимым, место будет занимать, но нельзя взаимодействовать */
+
+/* BACKGROUNDS */
+
+border-radius: 15px;
+box-shadow: 0 0 10px;
+background: #08b6fb;
+background-image: url('../img/realmadrid.png'); /* выбор изображения */
+background-repeat: no-repeat; /* заполнение блока изображением, повторяемость*/
+background-size: cover; /* размер */
+background-position: top center; /* по умолчанию - снизу и справа*/
+background-attachment: fixed; /* прокрутка бекграунда типа паралакс*/
+
+}
+
+.mother {
+
+    height: 300px;
+    background: grey;
+}
+
+.son1 {
+    height: 200px;
+    width: 200px;
+    background-image: url(../img/realmadrid.png);
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-size: contain;
+    float:right;
+    margin-bottom: 0;
+}
+
+.son2 {
+
+    height: 200px;
+    width: 200px;
+    background: olive;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.son3 {
+height: 200px;
+width: 200px;
+background:peachpuff;
+}

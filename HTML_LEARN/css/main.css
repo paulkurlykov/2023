@@ -1,0 +1,151 @@
+body {
+
+    background: rgb(232, 232, 232,1);
+}
+
+.main {
+    margin: auto;
+    width: 1190px;
+    height: 1064px;
+    background: url(../img/ellipse.png) no-repeat;
+    background-color:rgb(232, 232, 232, 0.2);
+    
+
+}
+
+.main-header {
+    width: 67px;
+    height: 10px;
+    margin: 62px auto 0 auto;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 2.86;
+    letter-spacing: 2.8px;
+    text-align: center;
+    color: rgba(39, 61, 70);
+    
+}
+
+.main-top-text {
+
+    width: 721px;
+    height: 75px;
+    margin: 28px auto 87px auto;
+    font-family: TimesNewRomanPSMT;
+    font-size: 34px;
+    line-height: normal;
+    text-align: center;
+    color: rgb(39, 61, 70);
+}
+
+.main-img {
+
+  width: 821px;
+  height: 541px;
+  box-shadow: 0px 15px 65px 0 rgba(15, 16, 16, 0.5);
+  border: solid 10px #ffffff;
+  margin: auto;
+  background: url(../img/light-man\ copy.png) rgba(255,255,255);
+}
+
+.middle-text {
+
+    width: 736px;
+    height: 257px;
+    margin: 107px auto auto;
+    font-family: TimesNewRomanPSMT;
+    font-size: 24px;
+    line-height: 1.67;
+    text-align: left;
+    color: rgba(39, 61, 70, 0.8);
+}
+
+.ul-block {
+
+    margin-top: 167px;
+    margin-left: 530px;
+    width: 700px;
+    
+}
+
+.bottom li {
+
+    padding-left: 35px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(../img/check\ icon.png) no-repeat;
+    list-style-type: none;
+
+    
+}
+
+.li-1 {
+    color: #273d46;
+
+}
+
+.li-2 {
+    color: #80b7b3;
+    font-style: italic;
+}
+
+.li-3 {
+    color: #273d46;
+    font-weight: 700;
+    
+    
+
+}
+
+.li-4 {
+    color: #273d46;
+    text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.3);
+    text-decoration: line-through;
+    opacity: 0.300;
+
+}
+
+.button, .btn {
+
+width: 199px;
+height: 44px;
+box-shadow: 0 0 10px 1px rgba(29, 66, 66, 0.3);
+background-color: rgba(128,183,179);
+border-radius: 30px;
+letter-spacing: 0.2em;
+padding-left: 10px;
+color: white;
+margin-top: 50px;
+margin-right: auto;
+margin-left: 570px;
+}
+
+.button-text {
+max-width: 150px;
+color: white;
+font-family: Arial;
+font-size: 14px;
+line-height: 40px;
+font-weight: 400;
+text-transform: uppercase;
+letter-spacing: 0.2em;
+color: #ffffff;
+float: left;
+margin-right: 18px;
+margin-left: 20px;
+margin-top: 2px;
+}
+
+.button-icon_arrow {
+background: url(../img/arrow.png) no-repeat;
+width: 25px;
+height: 15px;
+opacity: 0.8;
+margin-bottom: 1px;
+float: left;
+margin-top: 14px;
+
+
+
+}
