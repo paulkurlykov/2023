@@ -1,0 +1,90 @@
+/////// ИСХОДНЫЙ HTML
+
+{
+  /* <div class="promo__interactive-title">ПРОСМОТРЕННЫЕ ФИЛЬМЫ</div>
+            <ul class="promo__interactive-list">
+              <li class="promo__interactive-item">
+                ЛОГАН
+                <div class="delete"></div>
+              </li>
+              <li class="promo__interactive-item">
+                ЛИГА СПРАВЕДЛИВОСТИ
+                <div class="delete"></div>
+              </li>
+              <li class="promo__interactive-item">
+                ЛА-ЛА ЛЭНД
+                <div class="delete"></div>
+              </li>
+              <li class="promo__interactive-item">
+                ОДЕРЖИМОСТЬ
+                <div class="delete"></div>
+              </li>
+              <li class="promo__interactive-item">
+                СКОТТ ПИЛИГРИМ ПРОТИВ...
+                <div class="delete"></div>
+              </li>
+            </ul>
+          </div> */
+}
+
+/// [1] /// - ЗАМЕНА БЛОКА ЧЕРЕЗ FOREACH НА РУЧНОЙ HTML
+
+/// замена кода блока LI со вложенным DIV внутри LI
+
+// let liList = document.querySelectorAll(".promo__interactive-item");
+
+// liList.forEach((item) => {
+//   item.innerHTML = `ПОМНИТЬ<div class="delete"></div>`;
+// });
+
+{
+  /* <ul class="promo__interactive-list">
+                        <li class="promo__interactive-item">ПОМНИТЬ<div class="delete"></div></li>
+                        <li class="promo__interactive-item">ПОМНИТЬ<div class="delete"></div></li>
+                        <li class="promo__interactive-item">ПОМНИТЬ<div class="delete"></div></li>
+                        <li class="promo__interactive-item">ПОМНИТЬ<div class="delete"></div></li>
+                        <li class="promo__interactive-item">ПОМНИТЬ<div class="delete"></div></li>
+                    </ul> */
+}
+
+// Как понять:
+
+// 1 - item.innerHTML =; Это команда, которая определяет, какой текст будет внутри выбранного элемента (item)
+
+// 2 - если внутри текста есть теги, то команда постарается определить это, как HTML-тег, как в примере выше есть div с классом delete. Этот div также будет помещен в рамки элемента li
+
+// 3 -
+
+///[2]/// - ЗАМЕНА БЛОКА ЧЕРЕЗ FOREACH НА ДИНАМИЧЕСКИЙ HTML (через outerHTML)
+
+// let liList = document.querySelectorAll(".promo__interactive-item"),
+//   trashBox = document.querySelectorAll(".delete");
+
+// liList.forEach((item, index) => {
+//     item.innerHTML = `${movieDB.movies[index]}${trashBox[index].outerHTML}`; // в содержимое
+//   });
+
+// Как понять:
+
+// получаем через outerHTML не содержимое элемента (в отлияии от inner), а весь код элемента включая теги. Затем мы можем подставить этот код динамически
+
+//// ИЛИ
+
+// function updateFilmList() {
+//     ul.innerHTML = ''; // очищаем весь блок вообще
+//     mdb.forEach((item, index) => {
+//       // здесь forEach, но можно и вручную
+//       ul.innerHTML += `<li class="promo__interactive-item">${
+//         // к ul применили innerHTML, туда вставляем струкутуру
+//         index + 1
+//       }) ${item}<div class="delete"></div>`;
+//     });
+//   }
+
+////// КАК СМЕНИТЬ КЛАСС
+
+// liList.forEach((item, index) => {
+//     item.classList.remove("promo__interactive-item"); // удаляем старый класс
+//     item.classList.add("changing-class"); // сетим новый класс
+//     item.innerHTML = `${movieDB.movies[index]}<div class="delete"></div>`;
+//   });
