@@ -81,6 +81,38 @@
 //     });
 //   }
 
+// INNER HTML, TEXTCONTENT, INNERTEXT внутри обработчика
+// если нужно менять текст, то все эти свойства нужно получать внутри обработчика, иначе поменять текст будет нельзя. ХЗ, почему так.
+
+// ЗАМЕНА ТЕКСТА ПРИ СОБЫТИИ НА ДРУГОЙ СТАТИЧНЫЙ
+
+// const element = document.querySelector('.class'); // получаем элемент, внутри которого текст, который нужно поменять
+
+// somebox.addEventListener('click', () => {
+//   element.textContent = 'new text'; // только в обработчике обращаемся к textContent, и меняем текст
+// });
+
+// ЗАМЕНА ТЕКСТА ПРИ СОБЫТИИ НА ДРУГОЙ ДИНАМИЧЕСКИЙ
+
+// let score = 50,
+//   divBox = document.querySelector('.class');
+
+// divBox.textContent = score; // устанавливаем как текст значение из переменной score
+
+// somebox.addEventListener('click', () => {
+//   score--;
+//   divBox.textContent = score; // присваиваем в качестве текста значение переменной еще раз после изменения score. Сама она не поменяется
+// });
+
+// ФИКСИРУЕМ СОДЕРЖИМОЕ ФОРМЫ ЧЕРЕЗ VALUE
+
+// let inputData = document.querySelector('input'); // ловим тег input - само окно формы
+
+// sendButton.addEventListener('click', () => {
+//   //!!!!! ВАЖНО ОБЪЯВИТЬ ПЕРЕМЕННУЮ ДЛЯ VALUE DНУТРИ ФУНКЦИИ!!!
+//   const inputData = input.value; // кладем данные в переменную inputData
+// });
+
 ////// КАК СМЕНИТЬ КЛАСС
 
 // liList.forEach((item, index) => {
